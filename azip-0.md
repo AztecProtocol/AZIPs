@@ -35,7 +35,7 @@ The AZIPs status does not enforce when development of a particular piece of work
 
 1. **Informational** - Provide general guidelines or information to the Aztec community, but does not propose a new feature. Includes high level descriptions of the system, architecture, etc.
 2. **Core** - Core System AZIPs, including improvements to e.g. Public, Private, Sequencer and Prover clients, networking protocols or client API/RPC interfaces.
-3. **Standard** - application layer AZIPs, e.g. defining standards for contracts written in Noir etc.
+3. **Standards** - application layer AZIPs, e.g. defining standards for contracts written in Noir etc.
 
 ## What belongs in a successful AZIP?
 
@@ -44,12 +44,12 @@ Each AZIP should have the following parts:
 - **Preamble** - Headers containing metadata about the AZIP, including the AZIP number, a short descriptive title (limited to a maximum of 44 characters), a description (limited to a maximum of 140 characters), and the author details. Irrespective of the category, the title and description should not include AZIP number. See below for details.
 - **Abstract** - Abstract is a multi-sentence (short paragraph) technical summary. This should be a very terse and human-readable version of the specification section. Someone should be able to read only the abstract to get the gist of what this specification does.
 - **Motivation** (optional) - A motivation section is critical for AZIPs that want to change the protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the EIP solves. This section may be omitted if the motivation is evident.
-- **Specification** (required for `Core` and `Standard` AZIPs) - The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations.
+- **Specification** (required for `Core` and `Standards` AZIPs) - The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations.
 - **Rationale** - The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is supported in other languages. The rationale should discuss important objections or concerns raised during discussion around the AZIP.
 - **Backwards Compatibility** (optional) - All AZIPs that introduce backwards incompatibilities must include a section describing these incompatibilities and their consequences. The AZIP must explain how the author proposes to deal with these incompatibilities. This section may be omitted if the proposal does not introduce any backwards incompatibilities, but this section must be included if backward incompatibilities exist.
 - **Test Cases** (optional) - Tests should either be inlined in the AZIP as data (such as input/expected output pairs, or included in `../assets/azip-###/<filename>`.
 - **Reference Implementation** (optional) - An optional section that contains a reference/example implementation that people can use to assist in understanding or implementing this specification. This section may be omitted for all AZIPs.
-- **Security Considerations** (required for `Core` and `Standard` AZIPs) - All `Core` and `Standard` AZIPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks and can be used throughout the life-cycle of the proposal. E.g. include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. AZIP submissions missing the “Security Considerations” section will be rejected. An AZIP cannot proceed to status `Final` without a Security Considerations discussion deemed sufficient by the reviewers.
+- **Security Considerations** (required for `Core` and `Standards` AZIPs) - All `Core` and `Standards` AZIPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks and can be used throughout the life-cycle of the proposal. E.g. include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. AZIP submissions missing the “Security Considerations” section will be rejected. An AZIP cannot proceed to status `Final` without a Security Considerations discussion deemed sufficient by the reviewers.
 - **Copyright Waiver** - All AZIPs must be in the public domain. The copyright waiver MUST link to the license file and use the following wording: `Copyright and related rights waived via [CC0](/LICENSE).`
 
 ## AZIP Formats and Templates
@@ -68,7 +68,7 @@ Each AZIP must begin with a header preamble. The headers must appear in the foll
 | `author`             | Comma separated list of the author's. Example: `FirstName LastName (@GitHubUsername)`, `FirstName LastName <foo@bar.com>` |
 | `discussions-to`     | The URL pointing to the official discussion thread in the [Aztec forum](https://discourse.aztec.network).                                                                       |
 | `status`             | `Draft`, `Review`, `Final`, or `Cancelled`                                             |
-| `category`           | `Informational`, `Core`, or `Standard`                                    |
+| `category`           | `Informational`, `Core`, or `Standards`                                    |
 | `created`            | Date created on, in ISO 8601 (yyyy-mm-dd) format.                                                                         |
 
 Headers that permit lists must separate elements with commas.
