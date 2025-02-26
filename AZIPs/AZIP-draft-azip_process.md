@@ -39,9 +39,9 @@ There are five types of AZIPs:
 
 3. **AZRCs** describe standards and application layer interfaces. AZRCs become `Final` through adoption and usage by the community of devs, users and researchers. Examples include token standards, wallet formats etc. 
 
-4. **Informational AZIPs** describes general guidelines or information to the Aztec community, but does not propose a new feature. Users of the Aztec Network, and client teams are free to ignore Informational AZIPs or follow their advice. 
+4. A **Informational AZIP** describes general guidelines or information to the Aztec community, but does not propose a new feature. Users of the Aztec Network, and client teams are free to ignore Informational AZIPs or follow their advice. 
 
-5. **Meta AZIPs** describes a network upgrade. In the Aztec Network, network upgrades refer to governance proposals which deploy one more new governance contracts on the L1. This is the equivalent of an Aztec "hard fork". Each network upgrade is associated with a single Meta AZIP.  
+5. A **Meta AZIP** describes a network upgrade. In the Aztec Network, network upgrades refer to governance proposals which deploy one more new governance contracts on the L1. This is the equivalent of an Aztec "hard fork". Each network upgrade is associated with a single Meta AZIP.  
 
 Meta AZIPs need to include references to one Core AZIPs at a minimum. non-Core AZIPs that have been included in a network upgrade are not required to be included in the Meta AZIP. Meta AZIPs become `Final` when they are implemented on a testnet. 
 
