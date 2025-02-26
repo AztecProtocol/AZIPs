@@ -5,7 +5,7 @@ description: <Description is one full (short) sentence>
 author: <a comma separated list of the author's or authors' name + GitHub username (in parenthesis), or name and email (in angle brackets).  Example, FirstName LastName (@GitHubUsername), FirstName LastName <foo@bar.com>, FirstName (@GitHubUsername) and GitHubUsername (@GitHubUsername)>
 discussions-to: <URL>
 status: Draft
-type: <Informational, Non-Core, Core or Meta>
+type: <Informational, AZRC, Non-Core, Core or Meta>
 created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
 requires: <AZIP number(s)> # Only required when you reference an AZIP in the `Specification` section. Otherwise, remove this field.
 ---

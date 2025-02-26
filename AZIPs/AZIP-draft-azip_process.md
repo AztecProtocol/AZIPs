@@ -37,7 +37,7 @@ There are five types of AZIPs:
 
     Since not all non-Core AZIPs require a governance vote, such AZIPs become `Final` in various ways including 
 
-3. **AZRCs** describe standards and application layer interfaces. AZRCs become `Final` through adoption and usage by the community of devs, users and researchers. Examples include token standards, wallet formats, signature schemes etc. 
+3. **AZRCs** describe standards and application layer interfaces. AZRCs become `Final` through adoption and usage by the community of devs, users and researchers. Examples include token standards, wallet formats etc. 
 
 4. **Informational AZIPs** describes general guidelines or information to the Aztec community, but does not propose a new feature. Users of the Aztec Network, and client teams are free to ignore Informational AZIPs or follow their advice. 
 
@@ -60,15 +60,15 @@ For Core AZIPs, given they require inclusion in a Meta AZIP to be considered `Fi
 
 ## AZIP Process
 
-### Non-Core AZIPs
+### Informational, AZRCs and Non-Core AZIPs
 
-non-Core AZIPs progress from Idea -> Draft -> Review -> Final.
-
-
-![on-Core AZIPs Process](./../figures/AZIP-1/non-core-AZIPs.png)
+These AZIPs progress from Idea -> Draft -> Review -> Final.
 
 
-**Idea Stage**: AZIPs in the `Idea` stage are not tracked within any individual Upgrade Meta AZIP. They are instead posted by the author on public forums, including the Aztec [forum](#https://forum.aztec.network/).
+![Non-Core AZIPs Process](./../figures/AZIP-1/non-core-AZIPs.png)
+
+
+**Idea Stage**: AZIPs in the `Idea` stage are not tracked within the repository. They are instead posted by the author on public forums, including the Aztec [forum](#https://forum.aztec.network/).
 
 **Draft Stage**: After feedback from the community, the AZIP author can submit a PR to the AZIP repository. An AZIP editor checks for basic correctness, technical soundness and grammar. All AZIPs which are merged to the repo begin with a `Draft` status. 
 
@@ -78,9 +78,9 @@ non-Core AZIPs progress from Idea -> Draft -> Review -> Final.
 
 ### Core and Meta AZIPs
 
-Core AZIPs must be included in a scheduled network upgrade on a Testnet to achieve `Final` status. When the network upgrade is successful on Aztec Mainnet, the Core AZIP along with the Meta AZIP become `Implemented`. For non-Core AZIPs, the `Review` stage is optional. 
+Core AZIPs must be included in a scheduled network upgrade on a Testnet to achieve `Final` status. When the network upgrade is successful on Aztec Mainnet, the Core AZIP along with the Meta AZIP become `Implemented`. For Core AZIPs, the `Review` stage is optional. 
 
-While anyone can create and submit a PR to add Core and non-Core AZIPs to the repository, only the Aztec Core Contributors can start Meta AZIPs. Core Contributors are responsible for maintaining the Meta AZIPs and by extension responsible for advancing the Core AZIPs from `Draft` to `Implemented`, according to the following process.
+While anyone can create and submit a PR to add non-Meta AZIPs to the repository, only the Aztec Core Contributors can start Meta AZIPs. Core Contributors are responsible for maintaining the Meta AZIPs and by extension responsible for advancing the Core AZIPs from `Draft` to `Implemented`, according to the following process.
 
 ![Core and Meta AZIPs](./../figures/AZIP-1/core-and-meta-AZIPs.png)
 
@@ -146,7 +146,7 @@ Each AZIP must begin with a header preamble. The headers must appear in the foll
 | author           | Comma separated list of the authors. Example: FirstName LastName (@GitHubUsername), FirstName LastName <foo@bar.com> |
 | discussions-to   | The URL pointing to the official discussion thread in the Aztec forum.                       |
 | status           | Draft, Review, Final, or Cancelled                                                            |
-| type         | Informational, Non-Core, Core or Meta                                                             |
+| type         | Informational, AZRC, Non-Core, Core or Meta                                                             |
 | created          | Date created on, in ISO 8601 (yyyy-mm-dd) format.                                           |
 | requires         | AZIP number(s) (Optional)
 
