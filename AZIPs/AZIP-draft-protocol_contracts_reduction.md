@@ -47,7 +47,7 @@ Protocol circuits, the AVM, the sequencer, the PXE, and `aztec.js` MUST be updat
 
 1. The protocol contracts tree is rebuilt over the new three-entry set at addresses `1`, `2`, `3`.
 2. Any constant, hard-coded address, manifest entry, or lookup keyed on `AuthRegistry`, `MultiCallEntrypoint`, or `PublicChecks` is removed.
-3. Any references to `FeeJuice` at its previous address (`5`) are updated to `3`, and `ContractClassRegistry` at `3` is updated to `2`.
+3. The address constants for `ContractInstanceRegistry` (`2` → `1`), `ContractClassRegistry` (`3` → `2`), and `FeeJuice` (`5` → `3`) are updated. These addresses are referenced throughout the stack via Noir/TS/C++ constants, so this is not a manual per-callsite migration.
 
 ## Rationale
 
