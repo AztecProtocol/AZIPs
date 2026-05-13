@@ -1,3 +1,1 @@
-# Aztec Improvement Proposals (AZIPs)
-
-An AZIP is a design document providing information to the Aztec community, or describing a new feature for Aztec or its processes or environment.
+Please use this repo instead: https://github.com/AztecProtocol/governance
